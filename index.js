@@ -48,6 +48,7 @@ function onSubmit(evt) {
   // Trigger Success
   signupCardEl.style.display = "none";
   successMessageCardEl.style.display = "flex";
+  document.getElementById("success-message__email").innerHTML = emailEl.value;
 }
 
 // Successful Submit
