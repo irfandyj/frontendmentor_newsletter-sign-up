@@ -47,7 +47,15 @@ function onSubmit(evt) {
 
   // Trigger Success
   signupCardEl.style.display = "none";
-  successMessageCardEl.style.display = "block";
+  successMessageCardEl.style.display = "flex";
 }
 
 // Successful Submit
+
+
+// Dismiss Message
+const dismissMessageBtnEl = document.getElementsByClassName("success-message__btn")[0];
+function dismissMessage() {
+  signupCardEl.style.display = "flex";
+  successMessageCardEl.style.display = "none";
+}
