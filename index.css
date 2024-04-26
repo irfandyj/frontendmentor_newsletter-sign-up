@@ -27,6 +27,7 @@ body {
   background: hsl(234, 29%, 20%);
   height: 100vh;
   align-items: center;
+  justify-content: center;
 
   font-family: "Roboto";
   /* font-weight: bold; */
@@ -35,8 +36,8 @@ body {
 /* Desktop */
 .sign-up {
   /* Positioning */
-  /* display: none; */
-  display: flex;
+  display: none;
+  /* display: flex; */
   margin: auto;
   justify-content: center;
   align-items: center;
@@ -136,11 +137,13 @@ body {
 
 /* Success Message */
 .success-message {
-  /* display: flex; */
-  display: none;
+  display: flex;
+  /* display: none; */
   flex-flow: column;
   background: white;
   padding: 48px;
+  max-width: 375px;
+  border-radius: 16px;
 }
 .success-message__img {
   max-width: 64px;
@@ -201,5 +204,18 @@ body {
   
   .sign-up__img {
     border-radius: 0;
+  }
+
+  .success-message {
+    padding: 16px;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+  }
+  .success-message__btn {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 32px);
   }
 }
